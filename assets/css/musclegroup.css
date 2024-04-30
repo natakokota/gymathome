@@ -1,0 +1,64 @@
+body {
+    background-image: url(../images/Homepage.png); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove default body margin */
+}
+
+.exercise-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.exercise-card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+    object-fit: cover;
+    width: 600px;
+    height: 200px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: #6a0dad; /* Set your desired button color */
+    border-color: #6a0dad;
+    color: #fff; /* Set your desired button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    color: #fff; 
+    background-color: #5b16dbb4; 
+    border-color: #5b16dba6; 
+}
+
+
+
+.container-in {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    border: 2px solid #cccccc00;
+    border-radius: 0px;
+    text-align: center;
+    width: 900px;
+    height: 400px;
+    }

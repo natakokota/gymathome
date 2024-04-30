@@ -1,0 +1,228 @@
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../images/Homepage.png); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    min-height: 100vh;
+  }
+
+  #centeredContainer {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+    .section-padding{
+        padding-top: 200px;
+        padding-bottom: 140px;
+    }
+
+
+  .scroll-container {
+  max-height: 150px;
+  overflow-y: scroll;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+
+      box-sizing: border-box;
+      font-family: sans-serif;
+  }
+
+  
+
+  main.table {
+      width: 70vw;
+      height: 70vh;
+      background-color: rgb(255, 255, 255);
+      backdrop-filter: blur(7px);
+      box-shadow: 2px 2px 12px rgb(255, 255, 255), -1px -1px 8px rgb(255, 255, 255);
+      border-radius: 0rem;
+      padding-bottom: 5%;
+      position: relative;
+  }
+
+  .table__header {
+    width: 70vw;
+    height: 8vh;
+    background-color: rgb(103, 37, 180);
+    padding: .8rem 1rem;
+    box-shadow: 2px 2px 12px rgb(255, 255, 255), -1px -1px 8px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the overflow */
+    text-overflow: ellipsis; /* Adds ellipsis for truncated text */
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    .table__header {
+        font-size: 0.8em; /* Adjust the font size as needed for smaller screens */
+    }
+}
+
+
+ 
+
+  .table__body {
+      width: 97%;
+      max-height: calc(96% - 1.6rem);
+      background-color: rgba(220, 186, 238, 0.422);
+      box-shadow: 2px 2px 12px rgb(255, 255, 255), -1px -1px 8px rgb(255, 255, 255);
+      margin: .8rem auto;
+      border-radius: .6rem;
+
+      overflow: auto;
+  }
+
+  .table__body::-webkit-scrollbar{
+      width: 0.5rem;
+      height: 0.5rem;
+  }
+
+  .table__body::-webkit-scrollbar-thumb{
+      border-radius: .5rem;
+      background-color: rgba(255, 255, 255, 0.397);
+      visibility: visible;
+  }
+
+  .table__body:hover::-webkit-scrollbar-thumb{ 
+      visibility: visible;
+  }
+
+  table {
+      width: 100%;
+      box-shadow: 2px 2px 12px rgb(255, 255, 255), -1px -1px 8px rgb(255, 255, 255);
+  }
+
+  
+  table, th, td {
+      border-collapse: collapse;
+      padding: 1rem;
+      text-align: left;
+  }
+
+  thead th {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: rgb(103, 37, 180);
+      cursor: pointer;
+      text-transform: capitalize;
+  }
+
+  tbody tr:nth-child(even) {
+      background-color: rgba(220, 186, 238, 0.582);
+  }
+
+  tbody tr {
+      --delay: .1s;
+      transition: .5s ease-in-out var(--delay), background-color 0s;
+  }
+
+  tbody tr.hide {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+
+  tbody tr:hover {
+      background-color: #fff6 !important;
+  }
+
+  tbody tr td,
+  tbody tr td p,
+  tbody tr td img {
+      transition: .2s ease-in-out;
+  }
+
+  tbody tr.hide td,
+  tbody tr.hide td p {
+      padding: 0;
+      font: 0 / 0 sans-serif;
+      transition: .2s ease-in-out .5s;
+  }
+
+  
+  
+
+
+  @media (max-width: 1000px) {
+      td:not(:first-of-type) {
+          min-width: 12.1rem;
+      }
+  }
+
+  thead th span.icon-arrow {
+      display: inline-block;
+      width: 1.3rem;
+      height: 1.3rem;
+      border-radius: 50%;
+      border: 1.4px solid transparent;
+      
+      text-align: center;
+      font-size: 1rem;
+      
+      margin-left: .5rem;
+      transition: .2s ease-in-out;
+  }
+
+  thead th:hover span.icon-arrow{
+      border: 1.4px solid #6c00bd;
+  }
+
+  thead th:hover {
+      color: #6c00bd;
+  }
+
+  thead th.active span.icon-arrow{
+      background-color: #6c00bd;
+      color: #fff;
+  }
+
+  thead th.asc span.icon-arrow{
+      transform: rotate(180deg);
+  }
+
+  thead th.active,tbody td.active {
+      color: #6c00bd;
+  }
+
+
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px; /* Adjust as needed */
+    width: 100%;
+    }
+
+    .button2 {
+        padding: 10px 30px;
+        font-size: 1.2em;
+        background-color: rgb(103, 37, 180);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #aa99b8; /* Set your desired button hover color */
+    }
+
+
+
+

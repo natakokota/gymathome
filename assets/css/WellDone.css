@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../images/Homepage.png); 
+    background-size: cover; 
+    background-position: center; 
+    
+}
+
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #5b7796;
+    border-color: #667f99;
+}
+
+.btn-secondary {
+    color: #6a0dad;
+    border-color: #6a0dad;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+}
+
+
+.container-in {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border: 2px solid #cccccc00;
+    border-radius: 10px;
+    text-align: center;
+}

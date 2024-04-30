@@ -1,0 +1,135 @@
+body {
+    background-image: url(../images/Homepage.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.login-container {
+    position: relative;
+    max-width: 350px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Updated to column layout */
+    align-items: center; /* Center align items */
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: height 0.3s;
+}
+
+.login-container::before {
+    content: "";
+    max-height: 500px;
+    max-width: 350px;
+    background: conic-gradient(
+        transparent, transparent, transparent, #d400d4
+    );
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.login-container::after {
+    content: "";
+    max-height: 500px;
+    max-width: 350px;
+    background: conic-gradient(
+        transparent, transparent, transparent, #00cfff
+    );
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.image {
+    inset: 5px;
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.alert-danger {
+    margin-top: 20px;
+}
+
+.login-content {
+    padding: 25px;
+    height: 450px;
+    width: 300px;
+}
+
+.login-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #32164f;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-button,
+.register-button {
+    width: 100%;
+    background-color: #32164f;
+    color: #fff;
+    border: 1px solid #32164f;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.login-button:hover,
+.login-button:focus,
+.register-button:hover,
+.register-button:focus {
+    background-color: rgb(128,97,190) !important;
+    border-color: rgb(128,97,190) !important;
+    color: #fff;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.reset-link {
+    color: rgb(103, 37, 180);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register-container {
+    margin-top: 10px;
+}
+
+.login-container.with-error {
+    height: 550px;
+}

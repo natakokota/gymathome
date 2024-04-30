@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../gymathome"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "gymathome2"
+	}
+}

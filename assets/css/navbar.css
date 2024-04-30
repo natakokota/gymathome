@@ -1,0 +1,69 @@
+:root {
+    --c-dark: #32164f;
+    --c-brand: rgb(103, 37, 180);
+    --c-brand-light: rgb(128, 97, 190);
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --c-light-gray: rgb(186, 99, 229);
+    --font-base: "GeneralSans", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+
+.navbar {
+    box-shadow: var(--box-shadow);
+    position: fixed; 
+    top: 0px; 
+    width: 100%;
+    border-radius: 0px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 24px;
+}
+
+.btn-outline {
+    color: rgb(103, 37, 180);
+    border-color: rgb(103, 37, 180);
+    background-color: #ffffff;
+}
+
+.btn-outline:hover {
+    color:  #ffffff;
+    border-color: rgb(103, 37, 180);
+    background-color:rgb(103, 37, 180);
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}

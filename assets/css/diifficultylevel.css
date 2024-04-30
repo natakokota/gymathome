@@ -1,0 +1,87 @@
+@import url(../css/general-sans.css);
+
+
+
+
+/* RESET & HELPERS */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+    background-image: url("../images/Homepage.png");
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    min-height: 100vh;
+
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+ h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+  
+.pricing-header {
+    max-width: 700px;
+}
+.btn-outline-primary {
+    color: #6a0dad;
+    border-color: #6a0dad;
+}
+  
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+}
+.pricing-header h1 {
+    color: #fff;
+}
+
+
+
+
+
+

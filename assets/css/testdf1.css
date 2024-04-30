@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../images/Homepage.png");
+}
+
+    .container-in {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border: 2px solid #cccccc00;
+    border-radius: 10px;
+    text-align: center;
+    }
+  
+  
+  .container {
+    max-width: 960px;
+    padding-top: 2100px;
+    padding-bottom: 20px;
+    
+  
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  .btn-outline-primary {
+    color: #6a0dad;
+    border-color: #6a0dad;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+  }
+  .pricing-header h1 {
+    color: #ffffff; /* Change to the desired color */
+  }

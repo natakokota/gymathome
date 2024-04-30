@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+.register-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.funky-background {
+    background-image: url(../images/Homepage.png);
+    background-size: cover;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.funky-background h2 {
+    margin-right: 20px;
+    font-size: 72px;
+    line-height: 1;
+    text-align: right;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fun-text {
+    color: rgb(126, 45, 177);
+}
+
+.register-form {
+    background-color: #fff;
+    flex: 3;
+    padding: 20px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    margin: 20px auto;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.register-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.register-box h2 {
+    color: #32164f;
+    margin-left: 12px;
+}
+
+.register-form h2 {
+    color: #32164f;
+    margin-left: 12px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #3c3b3b;
+}
+
+.form-group.indent {
+    margin-left: 15px;
+}
+
+.create-account-button {
+    width: 100%;
+    background-color: rgb(128,97,190) !important;
+    color: #fff;
+    border: 1px solid rgb(128,97,190) !important;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.create-account-button:hover,
+.create-account-button:focus {
+    background-color: rgb(128,97,190) !important;
+    border-color: rgb(128,97,190) !important;
+    color: #fff;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #800080;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+    }
+
+    .funky-background,
+    .register-form {
+        border-radius: 0;
+        margin-bottom: 0;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+}
